@@ -5,15 +5,18 @@ var pizza = {
   cheese: "mozzarella",
   sauce: "tomato",
   addToppings: function() {
-    return "Please add pepperoni and sausage";
+    console.log("Please add pepperoni and sausage");
   }
 };
-
-console.log(pizza.addToppings());
 
 
 // Part e
 
-function orderPizza(pizza) {
-  return console.log(pizza[i].crust);
+function orderPizza() {
+  console.log(pizza.crust);
+  console.log(pizza.cheese);
+  console.log(pizza.sauce);
+  console.log(pizza.addToppings());
 };
+
+orderPizza(pizza);
